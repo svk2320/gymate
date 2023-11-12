@@ -1,21 +1,17 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
+import React from 'react'
+import { Outlet } from 'react-router-dom';
 
-import Layout from "./layout";
-import Home from "./pages/Home";
-import RecipeDetail from "./pages/RecipeDetail";
+import Navbar from '../../sections/Navbar';
+import Footer from '../../sections/Footer';
 
-const App = () => {
+const Layout = () => {
   return (
-    <div className="bg-black">
-      <Routes>
-        <Route path="/" element={<Layout />} >
-          <Route index element={<Home />} />
-          <Route path="recipes/:id" element={<RecipeDetail/>} />
-        </Route >
-      </Routes>
-    </div>
-  );
-};
+    <>
+      <Navbar />
+        <Outlet />
+      <Footer />
+    </>
+  )
+}
 
-export default App;
+export default Layout
