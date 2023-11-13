@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
 
-function Button({ color, bg, cN, arrowColor, hover, text, goTo }) {
+const Button = ({ color, bg, cN, arrowColor, hover, text, goTo }) => {
   const goTop = () => {
     window.scrollTo({
       top: 0,
     });
   };
+
   return (
     <Link
       onClick={goTop}
@@ -16,6 +17,6 @@ function Button({ color, bg, cN, arrowColor, hover, text, goTo }) {
       <i className={`fa-solid fa-arrow-right text-[#FF0336] ${arrowColor}`}></i>
     </Link>
   );
-}
+};
 
 export default Button;

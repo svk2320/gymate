@@ -46,17 +46,17 @@ body {
   object-fit: cover;
   background-size: cover;
   background-position: center center;
-}
 
-.container-hero {
-  max-width: 111.6rem;
-  margin: 0 auto;
-}
-
-.hero-text {
-  top: 55%;
-  right: 12px;
-  transform: translate(-50%, -50%);
+  .container-hero {
+    max-width: 111.6rem;
+    margin: 0 auto;
+  }
+  
+  .hero-text {
+    top: 55%;
+    right: 12px;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .title-white {
@@ -102,8 +102,6 @@ body {
   background-image: url('../src/images/who-we-are/info-card-bg.jpg');
   color: white;
 }
-
-
 
 .about-cta {
   padding: 1.82rem 3.6rem;
