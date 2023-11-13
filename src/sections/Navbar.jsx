@@ -52,6 +52,7 @@ const Navbar = () => {
 
   // hamburger menu
   const hamburgerMenu = () => {
+    console.log(sideBar);
     setHamburger(!hamburger);
   };
 
@@ -91,7 +92,7 @@ const Navbar = () => {
             {/* Mobile Navbar */}
 
             <div
-              className={`flex top-0 flex-col fixed w-full left-0 h-screen bg-white z-[9999999999] py-[60px] px-[40px] ease-in-out duration-500 ${
+              className={`flex top-0 flex-col fixed w-full h-screen bg-white z-[9999999999] py-[60px] px-[40px] ease-in-out duration-500 ${
                 hamburger ? "left-0" : "-left-[-100%]"
               }`}
             >

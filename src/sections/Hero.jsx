@@ -1,16 +1,17 @@
-import React from 'react'
+import React from "react";
 
-import Button from '../components/Button'
-import TitleBg from '../images/pricing/titlebg.svg'
+import Button from "../components/Button";
+import TitleBg from "../images/pricing/titlebg.svg";
 
 const Hero = () => {
   return (
-    <section
+    <>
+      <section
         id="home"
         className="hero-section w-full h-screen min800:flex min800:justify-center min800:text-center"
       >
         <div className="container-hero">
-          {/* hero section */}
+          {/* Hero section */}
           <div
             className="flex flex-col text-white
            absolute hero-text min800:items-center min800:-right-[22rem] min620:-right-[20rem] min800:w-[80%] min540:-right-[17rem] min450:-right-[14rem] min375:-right-[11rem]"
@@ -36,8 +37,8 @@ const Hero = () => {
             />
           </div>
         </div>
-        
-        {/* socials */}
+
+        {/* Social media links */}
         <div
           className="flex flex-row-reverse -rotate-90 text-white
           absolute top-2/4 right-0 items-center min800:hidden"
@@ -51,7 +52,8 @@ const Hero = () => {
           </div>
         </div>
       </section>
-  )
-}
+    </>
+  );
+};
 
-export default Hero
+export default Hero;
