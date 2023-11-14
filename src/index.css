@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-// Resetting all the default values
+/* Resetting all the default values */
 
 * {
   margin: 0;
@@ -18,10 +17,10 @@ html {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
-// Style code for all the page
+/* Style code for all the page */
 
 .container {
   max-width: 124rem;
@@ -39,24 +38,24 @@ body {
 }
 
 .hero-section {
-  background-image: url('../src/images/hero/hero-img.jpg');
-  // background-image: url('../src/images/hero/hero-img\ \(1\).jpg');
+  background-image: url("../src/images/hero/hero-img.jpg");
+  /* background-image: url('../src/images/hero/hero-img\ \(1\).jpg'); */
   width: 100%;
   height: 110vh;
   object-fit: cover;
   background-size: cover;
   background-position: center center;
+}
 
-  .container-hero {
-    max-width: 111.6rem;
-    margin: 0 auto;
-  }
-  
-  .hero-text {
-    top: 55%;
-    right: 12px;
-    transform: translate(-50%, -50%);
-  }
+.container-hero {
+  max-width: 111.6rem;
+  margin: 0 auto;
+}
+
+.hero-text {
+  top: 55%;
+  right: 12px;
+  transform: translate(-50%, -50%);
 }
 
 .title-white {
@@ -64,7 +63,7 @@ body {
 }
 
 .hero-cta::after {
-  content: '';
+  content: "";
   width: 20rem;
   height: 5.5rem;
   border: 1px solid rgba(255, 255, 255, 0.362);
@@ -75,7 +74,7 @@ body {
 }
 
 .hero-cta:hover:after {
-  content: '';
+  content: "";
   width: 20rem;
   height: 5.5rem;
   border: 1px solid rgba(255, 255, 255);
@@ -86,7 +85,7 @@ body {
 }
 
 .about-section {
-  background-image: url('../src/images/who-we-are/background.jpg');
+  background-image: url("../src/images/who-we-are/background.jpg");
   object-fit: cover;
   background-size: cover;
   background-position: center center;
@@ -99,7 +98,7 @@ body {
 }
 
 .card-item-div:hover {
-  background-image: url('../src/images/who-we-are/info-card-bg.jpg');
+  background-image: url("../src/images/who-we-are/info-card-bg.jpg");
   color: white;
 }
 
@@ -110,7 +109,7 @@ body {
 }
 
 .about-cta::after {
-  content: '';
+  content: "";
   width: 20rem;
   height: 5.5rem;
   border: 1px solid rgba(63, 63, 63, 0.362);
@@ -121,10 +120,10 @@ body {
 }
 
 .about-cta:hover:after {
-  content: '';
+  content: "";
   width: 20rem;
   height: 5.5rem;
-  border: 1px solid #FF0336;
+  border: 1px solid #ff0336;
   position: absolute;
   top: -0px;
   left: 0px;
@@ -177,16 +176,16 @@ body {
 .item-3-div::after,
 .item-4-div::after,
 .item-5-div::after {
-  content: '';
+  content: "";
   height: 69px;
   width: 140px;
-  background-color: rgba(255, 255, 255, .3);
+  background-color: rgba(255, 255, 255, 0.3);
   position: absolute;
   left: -49px;
   bottom: 50%;
   border-radius: 0 50px 50px 0;
   transform: rotate(30deg);
-  transition: all .4s;
+  transition: all 0.4s;
   z-index: 5;
 }
 
@@ -197,7 +196,6 @@ body {
 .item-4-div:hover:after,
 .item-5-div:hover:after {
   background-color: rgb(255, 255, 255);
-
 }
 
 /* before pseudo */
@@ -209,44 +207,44 @@ body {
 .item-5-div::before {
   width: 50%;
   position: absolute;
-  transition: all .4s;
+  transition: all 0.4s;
   z-index: 6;
   display: block;
-  transform: scale(.65);
+  transform: scale(0.65);
 }
 
 .item-0-div::before {
-  content: url('../src/images/features/gym-bike.png');
+  content: url("../src/images/features/gym-bike.png");
   left: -25px;
   bottom: 45%;
 }
 
 .item-1-div::before {
-  content: url('../src/images/features/karate.png');
+  content: url("../src/images/features/karate.png");
   left: -1px;
   bottom: 45%;
 }
 
 .item-2-div::before {
-  content: url('../src/images/features/dumbbell.png');
+  content: url("../src/images/features/dumbbell.png");
   left: -1px;
   bottom: 45%;
 }
 
 .item-3-div::before {
-  content: url('../src/images/features/yoga.png');
+  content: url("../src/images/features/yoga.png");
   left: -1px;
   bottom: 45%;
 }
 
 .item-4-div::before {
-  content: url('../src/images/features/boxer.png');
+  content: url("../src/images/features/boxer.png");
   left: -1px;
   bottom: 45%;
 }
 
 .item-5-div::before {
-  content: url('../src/images/features/workout.png');
+  content: url("../src/images/features/workout.png");
   left: -25px;
   bottom: 45%;
 }
@@ -257,31 +255,31 @@ body {
 .item-3-div:hover:before,
 .item-4-div:hover:before,
 .item-5-div:hover:before {
-  transform: scale(.66);
+  transform: scale(0.66);
 }
 
 .item-0-div:hover:before {
-  content: url('../src/images/features/bike-red.png');
+  content: url("../src/images/features/bike-red.png");
 }
 
 .item-1-div:hover:before {
-  content: url('../src/images/features/karate-red.png');
+  content: url("../src/images/features/karate-red.png");
 }
 
 .item-2-div:hover:before {
-  content: url('../src/images/features/dumb-red.png');
+  content: url("../src/images/features/dumb-red.png");
 }
 
 .item-3-div:hover:before {
-  content: url('../src/images/features/yoga-red.png');
+  content: url("../src/images/features/yoga-red.png");
 }
 
 .item-4-div:hover:before {
-  content: url('../src/images/features/boxer-red.png');
+  content: url("../src/images/features/boxer-red.png");
 }
 
 .item-5-div:hover:before {
-  content: url('../src/images/features/workout-red.png');
+  content: url("../src/images/features/workout-red.png");
 }
 
 /* grid items */
@@ -309,7 +307,6 @@ body {
   transform: scale(1.3);
   box-shadow: inset 2px 2px 8px 160px rgba(0, 0, 0, 0);
 }
-
 
 .item-0-div {
   height: 30rem;
@@ -372,40 +369,37 @@ body {
 }
 
 .item-0 {
-  background-image: url('../src/images/features/cycling.jpg');
+  background-image: url("../src/images/features/cycling.jpg");
   width: 100%;
   height: 100%;
 }
 
 .item-1 {
-  background-image: url('../src/images/features/karate.jpg');
+  background-image: url("../src/images/features/karate.jpg");
   width: 100%;
   height: 100%;
-
 }
 
 .item-2 {
-  background-image: url('../src/images/features/power.jpg');
+  background-image: url("../src/images/features/power.jpg");
   width: 100%;
   height: 100%;
 }
 
 .item-3 {
-  background-image: url('../src/images/features/meditation.jpg');
+  background-image: url("../src/images/features/meditation.jpg");
   width: 100%;
   height: 100%;
-
 }
 
 .item-4 {
-  background-image: url('../src/images/features/mma.jpg');
+  background-image: url("../src/images/features/mma.jpg");
   width: 100%;
   height: 100%;
-
 }
 
 .item-5 {
-  background-image: url('../src/images/features/workout.jpg');
+  background-image: url("../src/images/features/workout.jpg");
   width: 100%;
   height: 100%;
 }
@@ -424,7 +418,7 @@ body {
 /* choose us */
 
 .choose-section {
-  background-image: url('../src/images/choose-us/choose-bg.jpg');
+  background-image: url("../src/images/choose-us/choose-bg.jpg");
   object-fit: cover;
   background-size: cover;
   background-position: center center;
@@ -439,8 +433,8 @@ body {
   background-color: #ff0336;
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%)rotate(174deg);
-  transform: translateY(-50%)rotate(174deg);
+  -webkit-transform: translateY(-50%) rotate(174deg);
+  transform: translateY(-50%) rotate(174deg);
   right: 10px;
 }
 
@@ -464,13 +458,13 @@ body {
 }
 
 .choose-cta:hover:after {
-  border: 2px solid #FF0336;
+  border: 2px solid #ff0336;
 }
 
 /* trainers section */
 
 .trainers-section {
-  background-image: url('../src/images/trainers/dot-bg.png');
+  background-image: url("../src/images/trainers/dot-bg.png");
   object-fit: cover;
   background-size: cover;
   background-position: center center;
@@ -480,7 +474,7 @@ body {
 }
 
 .trainers-section::after {
-  content: url('../src/images/trainers/bg-attachment.png');
+  content: url("../src/images/trainers/bg-attachment.png");
   position: absolute;
   top: 0;
   right: 0;
@@ -496,7 +490,7 @@ body {
   left: 0;
   right: 0;
   margin: 0 auto;
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .box-desc:hover:after {
@@ -515,20 +509,19 @@ body {
 
   gap: 6px;
   height: 100%;
-
 }
 
 #item-0 {
   height: 41rem;
   width: 100%;
-  background-color: #DE89DD;
+  background-color: #de89dd;
   grid-row-start: 1;
   grid-column-start: 1;
 
   grid-row-end: 3;
   grid-column-end: 3;
 
-  background-image: url('../src/images/gallery/img1.jpg');
+  background-image: url("../src/images/gallery/img1.jpg");
   object-fit: cover;
   background-size: cover;
   /* background-position: 0 510px; */
@@ -536,15 +529,14 @@ body {
 }
 
 #item-1 {
-
-  background-color: #F7D9AB;
+  background-color: #f7d9ab;
   grid-row-start: 1;
   grid-column-start: 3;
 
   grid-row-end: 2;
   grid-column-end: 5;
 
-  background-image: url('../src/images/gallery/img2.jpg');
+  background-image: url("../src/images/gallery/img2.jpg");
   object-fit: cover;
   background-size: cover;
   background-position: 0px -131px;
@@ -552,60 +544,54 @@ body {
 }
 
 #item-2 {
-
-  background-color: #BC775E;
+  background-color: #bc775e;
   grid-row-start: 2;
   grid-column-start: 3;
 
   grid-row-end: 4;
   grid-column-end: 5;
 
-  background-image: url('../src/images/gallery/img5.jpg');
+  background-image: url("../src/images/gallery/img5.jpg");
   object-fit: cover;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
 }
 
 #item-3 {
-
-  background-color: #A89CE7;
+  background-color: #a89ce7;
   grid-row-start: 3;
   grid-column-start: 1;
 
   grid-row-end: 4;
   grid-column-end: 2;
 
-  background-image: url('../src/images/gallery/img3.jpg');
+  background-image: url("../src/images/gallery/img3.jpg");
   object-fit: cover;
   background-size: cover;
   /* background-position: 0 -13px; */
   background-repeat: no-repeat;
-
 }
 
 #item-4 {
-
-  background-color: #DC9F7C;
+  background-color: #dc9f7c;
   grid-row-start: 3;
   grid-column-start: 2;
 
   grid-row-end: 4;
   grid-column-end: 3;
 
-  background-image: url('../src/images/gallery/img4.jpg');
+  background-image: url("../src/images/gallery/img4.jpg");
   object-fit: cover;
   background-size: cover;
   /* background-position: 0 -81px; */
   background-repeat: no-repeat;
-
 }
 
 /* bmi section */
 
 .bmi-section {
-  background-image: url('../src/images/bmi/background.jpg');
+  background-image: url("../src/images/bmi/background.jpg");
   object-fit: cover;
   background-size: cover;
   background-position: center right;
@@ -615,7 +601,7 @@ body {
 /* price section */
 
 .pricing-section {
-  background-image: url('../src/images/pricing/background.jpg');
+  background-image: url("../src/images/pricing/background.jpg");
   object-fit: cover;
   background-size: cover;
   background-position: center;
@@ -629,16 +615,15 @@ body {
 
 .pricing-cta::after {
   border: 2px solid #ff03353b;
-
 }
 
 .pricing-cta:hover:after {
-  border: 2px solid #FF0336;
+  border: 2px solid #ff0336;
 }
 
 /* blog section */
 .cta-section {
-  background-image: url('../src//images/call/background.jpg');
+  background-image: url("../src//images/call/background.jpg");
   object-fit: cover;
   background-size: cover;
   background-position: center;
@@ -659,7 +644,7 @@ body {
 
 /* login */
 .login-section {
-  background-image: url('../src/images/who-we-are/background.jpg');
+  background-image: url("../src/images/who-we-are/background.jpg");
   object-fit: cover;
   background-size: cover;
   background-position: center;
@@ -669,7 +654,7 @@ body {
 }
 
 .login-banner {
-  background-image: url('../src/images/login/banner.jpg');
+  background-image: url("../src/images/login/banner.jpg");
   object-fit: cover;
   background-size: cover;
   background-position: center;
@@ -695,51 +680,51 @@ body {
 }
 
 .cycling-bg {
-  background-image: url('../src/images/classes/cycling.jpg');
+  background-image: url("../src/images/classes/cycling.jpg");
 }
 
 .meditaion-bg {
-  background-image: url('../src/images/classes/meditation.jpg');
+  background-image: url("../src/images/classes/meditation.jpg");
 }
 
 .mma-bg {
-  background-image: url('../src/images/classes/mma.jpg');
+  background-image: url("../src/images/classes/mma.jpg");
 }
 
 .karate-bg {
-  background-image: url('../src/images/classes/karate.jpg');
+  background-image: url("../src/images/classes/karate.jpg");
 }
 
 .powerlift-bg {
-  background-image: url('../src/images/classes/powerlifting.jpg');
+  background-image: url("../src/images/classes/powerlifting.jpg");
 }
 
 .workout-bg {
-  background-image: url('../src/images/classes/workout.jpg');
+  background-image: url("../src/images/classes/workout.jpg");
 }
 
 .crossfit-bg {
-  background-image: url('../src/images/classes/cross.jpg');
+  background-image: url("../src/images/classes/cross.jpg");
 }
 
 .running-bg {
-  background-image: url('../src/images/classes/running.jpg');
+  background-image: url("../src/images/classes/running.jpg");
 }
 
 .box-bg {
-  background-image: url('../src/images/classes/box.jpg');
+  background-image: url("../src/images/classes/box.jpg");
 }
 
 .bodybuilding-bg {
-  background-image: url('../src/images/classes/bodybuilding.jpg');
+  background-image: url("../src/images/classes/bodybuilding.jpg");
 }
 
 .yoga-bg {
-  background-image: url('../src/images/classes/yoga.jpg');
+  background-image: url("../src/images/classes/yoga.jpg");
 }
 
 .fitness-bg {
-  background-image: url('../src/images/classes/fitness.jpg');
+  background-image: url("../src/images/classes/fitness.jpg");
 }
 
 /* blog page */
@@ -750,7 +735,7 @@ body {
 }
 
 .blog-banner {
-  background-image: url('../src/images/blogpage/sidebar1.png');
+  background-image: url("../src/images/blogpage/sidebar1.png");
   object-fit: cover;
   background-size: cover;
   background-position: center;
@@ -779,7 +764,7 @@ body {
 /* Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #A0A0A0 #FFFFFF;
+  scrollbar-color: #a0a0a0 #ffffff;
   scroll-behavior: smooth;
 }
 
@@ -791,19 +776,19 @@ body {
 
 *::-webkit-scrollbar-track {
   border-radius: 5px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 *::-webkit-scrollbar-thumb {
   border-radius: 80px;
-  background-color: #FF0336;
+  background-color: #ff0336;
   border: 1.5px solid #fff;
 }
 
 *::-webkit-scrollbar-thumb:hover {
-  background-color: #A0A0A0;
+  background-color: #a0a0a0;
 }
 
 *::-webkit-scrollbar-thumb:active {
-  background-color: #A0A0A0;
+  background-color: #a0a0a0;
 }
