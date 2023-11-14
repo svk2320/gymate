@@ -227,9 +227,9 @@ const Navbar = () => {
             ></i>
 
             {/* Account */}
-            <Link onClick={goTop} to="/signup" title="signup_button">
+            {/* <Link onClick={goTop} to="/signup" title="signup_button">
               <i className="fa-regular fa-user  text-white text-4xl cursor-pointer hover:text-[#FF0336] ease-in duration-200"></i>
-            </Link>
+            </Link> */}
 
             {/* Sidebar */}
             <i
