@@ -1,5 +1,5 @@
 # Gymate - Your Fitness Companion
-[Gymate website screenshot](website_screenshot/screenshot.jpg)
+![Gymate website screenshot](website_screenshot/screenshot.jpg)
 
 ## Overview
 
